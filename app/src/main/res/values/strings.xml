@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">FoodFact</string>
+    <string name="fruits_name">Nama Buah</string>
+    <string name="description">Deskripsi</string>
+    <string name="calories">Calories</string>
+
+
+    <string-array name="data_name">
+        <item>Apple</item>
+        <item>Avocado</item>
+        <item>Banana</item>
+        <item>Blueberry</item>
+        <item>Cherry</item>
+        <item>Fruit Salad</item>
+        <item>Mango</item>
+        <item>Orange</item>
+        <item>Papaya</item>
+        <item>Pineapple</item>
+        <item>Soursop</item>
+        <item>Strawberry</item>
+        <item>Watermelon</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>The fruit is round or oval with a skin that is usually red, green, or yellow in color. The flesh is crisp and sweet.</item>
+        <item>The fruit is round or oval in shape with a dark green skin. The pulp is soft and contains plenty of healthy fats.</item>
+        <item>Elongated fruit with bright yellow skin when ripe. The flesh is soft and sweet.</item>
+        <item>The small berries are dark blue in color. The flesh is soft and sweet.</item>
+        <item>The berries are small with a bright red or yellow color. The pulp is sweet and juicy.</item>
+        <item>A dish made from a mixture of different types of fruit cut into slices. Usually served with sauce or dressing.</item>
+        <item>Large fruit with yellow or green skin. The flesh is orange-yellow, soft, and very sweet.</item>
+        <item>Round fruit with orange-colored skin. The pulp is segmented and juicy.</item>
+        <item>The large fruits are round or oval in shape with green or yellow skin. The pulp is orange in color and soft.</item>
+        <item>The fruit is tubular with a spiny skin. The flesh is bright yellow and has a sweet and slightly sour flavor.</item>
+        <item>The fruit is round with dark green skin and thorns. The flesh is white, soft, and has a unique flavor, sweet and slightly sour.</item>
+        <item>The small berries are heart-shaped and bright red in color. The flesh is soft and sweet.</item>
+        <item>The large fruits are round or oval in shape with dark green skin. The pulp is red, pink, or yellow, juicy, and very sweet.</item>
+    </string-array>
+
+    <string-array name="data_calories">
+        <item>52</item>
+        <item>22</item>
+        <item>13</item>
+        <item>14</item>
+        <item>1</item>
+        <item>5</item>
+        <item>55</item>
+        <item>41</item>
+        <item>30</item>
+        <item>42</item>
+        <item>54</item>
+        <item>56</item>
+        <item>32</item>
+    </string-array>
+
+    <integer-array name="data_photo">
+        <item>@drawable/apple</item>
+        <item>@drawable/avocado</item>
+        <item>@drawable/banana</item>
+        <item>@drawable/bluberry</item>
+        <item>@drawable/cherry</item>
+        <item>@drawable/fruitsalad</item>
+        <item>@drawable/mango</item>
+        <item>@drawable/orange</item>
+        <item>@drawable/papaya</item>
+        <item>@drawable/pineapple</item>
+        <item>@drawable/soursop</item>
+        <item>@drawable/strawberry</item>
+        <item>@drawable/watermelon</item>
+
+    </integer-array>
+
+</resources>
