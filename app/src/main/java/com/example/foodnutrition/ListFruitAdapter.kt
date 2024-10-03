@@ -13,7 +13,6 @@ class ListFruitAdapter(private val listFruit: ArrayList<Fruits>) : RecyclerView.
         val imgPhoto: ImageView = itemView.findViewById(R.id.img_item_photo)
         val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
-//        val tvCalories: TextView = itemView.findViewById(R.id.tv_item_calories)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
@@ -28,11 +27,11 @@ class ListFruitAdapter(private val listFruit: ArrayList<Fruits>) : RecyclerView.
         holder.imgPhoto.setImageResource(photo)
         holder.tvName.text = name
         holder.tvDescription.text = description
-//        holder.tvCalories.text = calories.toString()
+
 
         holder.itemView.setOnClickListener {
             val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
-            intentDetail.putExtra("key_fruit", listFruit[holder.adapterPosition])
+            intentDetail.putExtra("key_fruit" ,listFruit[holder.adapterPosition])
             holder.itemView.context.startActivity(intentDetail)
         }
     }

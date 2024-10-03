@@ -52,16 +52,37 @@
             android:id="@+id/btn_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_item_description"
+            android:layout_below="@id/tv_item_carbs"
             android:layout_marginTop="16dp"
             android:layout_centerHorizontal="true"
             android:text="Bagikan" />
+
 
         <TextView
             android:id="@+id/tv_item_calories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_share"
-            android:text="TextView" />
+            android:layout_below="@id/tv_item_description"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:text="Calories: " />
+
+        <TextView
+            android:id="@+id/tv_item_calcium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_calories"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:text="Calcium: " />
+
+        <TextView
+            android:id="@+id/tv_item_carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_calcium"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:text="Carbs: " />
     </RelativeLayout>
 </ScrollView>

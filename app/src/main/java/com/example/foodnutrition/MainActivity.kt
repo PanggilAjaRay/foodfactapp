@@ -2,6 +2,7 @@ package com.example.foodnutrition
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.enableEdgeToEdge
@@ -45,10 +46,16 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDescription = resources.getStringArray(R.array.data_description)
         val dataPhoto = resources.obtainTypedArray(R.array.data_photo)
-//        val dataCalories = resources.getStringArray(R.array.data_calories)
+        val dataCalories = resources.getStringArray(R.array.data_calories)
+        val dataCalcium = resources.getStringArray(R.array.data_calcium)
+        val dataCarbs = resources.getStringArray(R.array.data_carbs)
         val listFruits = ArrayList<Fruits>()
         for (i in dataName.indices) {
-            val fruits = Fruits(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1))
+            val calories = dataCalories[i].toInt()
+            val calcium = dataCalcium[i].toInt()
+            val carbs = dataCarbs[i].toDouble()
+
+            val fruits = Fruits(dataName[i], dataDescription[i], dataPhoto.getResourceId(i, -1), calories, calcium, carbs)
             listFruits.add(fruits)
         }
         return listFruits

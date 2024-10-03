@@ -13,13 +13,21 @@
         android:theme="@style/Theme.Foodnutrition"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".About"
+            android:parentActivityName=".MainActivity"
+            android:label="About"
             android:exported="false" />
         <activity
             android:name=".DetailActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Detail Fruit"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Splashscreen"
+            android:theme="@style/SplashTheme"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
